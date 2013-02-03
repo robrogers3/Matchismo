@@ -22,6 +22,7 @@
 		EECBEA8716BDE95400CC178A /* Deck.m in Sources */ = {isa = PBXBuildFile; fileRef = EECBEA8616BDE95400CC178A /* Deck.m */; };
 		EECBEA8A16BDE9C300CC178A /* PlayingCard.m in Sources */ = {isa = PBXBuildFile; fileRef = EECBEA8916BDE9C300CC178A /* PlayingCard.m */; };
 		EECBEA8D16BDE9D800CC178A /* PlayingCardDeck.m in Sources */ = {isa = PBXBuildFile; fileRef = EECBEA8C16BDE9D800CC178A /* PlayingCardDeck.m */; };
+		EECBEA8F16BE123C00CC178A /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = EECBEA8E16BE123C00CC178A /* README.md */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -49,6 +50,7 @@
 		EECBEA8916BDE9C300CC178A /* PlayingCard.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PlayingCard.m; path = Model/PlayingCard.m; sourceTree = "<group>"; };
 		EECBEA8B16BDE9D800CC178A /* PlayingCardDeck.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PlayingCardDeck.h; path = Model/PlayingCardDeck.h; sourceTree = "<group>"; };
 		EECBEA8C16BDE9D800CC178A /* PlayingCardDeck.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PlayingCardDeck.m; path = Model/PlayingCardDeck.m; sourceTree = "<group>"; };
+		EECBEA8E16BE123C00CC178A /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,6 +70,7 @@
 		EECBEA4F16BDDDF700CC178A = {
 			isa = PBXGroup;
 			children = (
+				EECBEA8E16BE123C00CC178A /* README.md */,
 				EECBEA6416BDDDF700CC178A /* Matchismo */,
 				EECBEA5D16BDDDF700CC178A /* Frameworks */,
 				EECBEA5B16BDDDF700CC178A /* Products */,
@@ -192,6 +195,7 @@
 				EECBEA7316BDDDF700CC178A /* Default@2x.png in Resources */,
 				EECBEA7516BDDDF700CC178A /* Default-568h@2x.png in Resources */,
 				EECBEA7816BDDDF700CC178A /* MainStoryboard.storyboard in Resources */,
+				EECBEA8F16BE123C00CC178A /* README.md in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
