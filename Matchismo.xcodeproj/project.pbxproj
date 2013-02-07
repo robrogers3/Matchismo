@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		EE278E4216C0CD9E001ECB62 /* cardback.png in Resources */ = {isa = PBXBuildFile; fileRef = EE278E4116C0CD9E001ECB62 /* cardback.png */; };
 		EECBEA5F16BDDDF700CC178A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EECBEA5E16BDDDF700CC178A /* UIKit.framework */; };
 		EECBEA6116BDDDF700CC178A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EECBEA6016BDDDF700CC178A /* Foundation.framework */; };
 		EECBEA6316BDDDF700CC178A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EECBEA6216BDDDF700CC178A /* CoreGraphics.framework */; };
@@ -23,9 +24,11 @@
 		EECBEA8A16BDE9C300CC178A /* PlayingCard.m in Sources */ = {isa = PBXBuildFile; fileRef = EECBEA8916BDE9C300CC178A /* PlayingCard.m */; };
 		EECBEA8D16BDE9D800CC178A /* PlayingCardDeck.m in Sources */ = {isa = PBXBuildFile; fileRef = EECBEA8C16BDE9D800CC178A /* PlayingCardDeck.m */; };
 		EECBEA8F16BE123C00CC178A /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = EECBEA8E16BE123C00CC178A /* README.md */; };
+		EECBEA9216BF9F7000CC178A /* CardMatchingGame.m in Sources */ = {isa = PBXBuildFile; fileRef = EECBEA9116BF9F7000CC178A /* CardMatchingGame.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		EE278E4116C0CD9E001ECB62 /* cardback.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cardback.png; sourceTree = "<group>"; };
 		EECBEA5A16BDDDF700CC178A /* Matchismo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Matchismo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EECBEA5E16BDDDF700CC178A /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		EECBEA6016BDDDF700CC178A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -51,6 +54,8 @@
 		EECBEA8B16BDE9D800CC178A /* PlayingCardDeck.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PlayingCardDeck.h; path = Model/PlayingCardDeck.h; sourceTree = "<group>"; };
 		EECBEA8C16BDE9D800CC178A /* PlayingCardDeck.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PlayingCardDeck.m; path = Model/PlayingCardDeck.m; sourceTree = "<group>"; };
 		EECBEA8E16BE123C00CC178A /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
+		EECBEA9016BF9F7000CC178A /* CardMatchingGame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CardMatchingGame.h; path = Model/CardMatchingGame.h; sourceTree = "<group>"; };
+		EECBEA9116BF9F7000CC178A /* CardMatchingGame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CardMatchingGame.m; path = Model/CardMatchingGame.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,6 +103,7 @@
 		EECBEA6416BDDDF700CC178A /* Matchismo */ = {
 			isa = PBXGroup;
 			children = (
+				EE278E4116C0CD9E001ECB62 /* cardback.png */,
 				EECBEA6D16BDDDF700CC178A /* CardGameAppDelegate.h */,
 				EECBEA6E16BDDDF700CC178A /* CardGameAppDelegate.m */,
 				EECBEA7616BDDDF700CC178A /* MainStoryboard.storyboard */,
@@ -134,6 +140,8 @@
 				EECBEA8916BDE9C300CC178A /* PlayingCard.m */,
 				EECBEA8B16BDE9D800CC178A /* PlayingCardDeck.h */,
 				EECBEA8C16BDE9D800CC178A /* PlayingCardDeck.m */,
+				EECBEA9016BF9F7000CC178A /* CardMatchingGame.h */,
+				EECBEA9116BF9F7000CC178A /* CardMatchingGame.m */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -196,6 +204,7 @@
 				EECBEA7516BDDDF700CC178A /* Default-568h@2x.png in Resources */,
 				EECBEA7816BDDDF700CC178A /* MainStoryboard.storyboard in Resources */,
 				EECBEA8F16BE123C00CC178A /* README.md in Resources */,
+				EE278E4216C0CD9E001ECB62 /* cardback.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -213,6 +222,7 @@
 				EECBEA8716BDE95400CC178A /* Deck.m in Sources */,
 				EECBEA8A16BDE9C300CC178A /* PlayingCard.m in Sources */,
 				EECBEA8D16BDE9D800CC178A /* PlayingCardDeck.m in Sources */,
+				EECBEA9216BF9F7000CC178A /* CardMatchingGame.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -329,6 +339,7 @@
 				EECBEA8016BDDDF700CC178A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
