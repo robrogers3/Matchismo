@@ -26,7 +26,6 @@
     if (!_game)
         _game = [[CardMatchingGame alloc] initWithCardCount:[self.cardButtons count]
                                                   usingDeck: [[PlayingCardDeck alloc] init]];
-                 
     return _game;
 }
 -(void)setCardButtons:(NSArray *)cardButtons {

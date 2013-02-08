@@ -10,19 +10,19 @@
 -(int) match:(NSArray*) otherCards
 {
     int score = 0;
-    for(PlayingCard* card in otherCards)
-    {
-        if (self.rank == card.rank)
-            score += 4;
-        if ([self.suit isEqualToString:card.suit])
-            score += 1;
+    for (PlayingCard *card in otherCards) {
+        if ([card isKindOfClass:[PlayingCard class]]) {
+            if (self.rank == card.rank)
+                score += 4;
+            if ([self.suit isEqualToString:card.suit])
+                score += 1;
+        }
     }
-    if([otherCards count]>1)
-    {
+    if ([otherCards count] > 1) {
         NSRange range;
-        range.location=1;
-        range.length = [otherCards count]-1;
-        score+= [otherCards[0] match:[otherCards subarrayWithRange:range]];
+        range.location = 1;
+        range.length = [otherCards count] -1;
+        score += [otherCards[0] match:[otherCards subarrayWithRange:range]];
     }
     return score;
 }

@@ -41,7 +41,7 @@
             }
         }
     }
-    self.lastPlay = @"Your Play!";
+    self.lastPlay = @"New Deal. Your Play!";
     return self;
 }
 -(NSString *)stringFromCards: (Card *) card andMoreCards: (NSMutableArray *) ocards {
@@ -58,19 +58,17 @@
 -(int)checkMatches:(Card *)card matchMode: (NSUInteger) matchMode
 {
     int matchScore = 0;
-    self.lastPlay = [NSString stringWithFormat:@"Flipped: %@", card.contents];
+    //self.lastPlay = [NSString stringWithFormat:@"Flipped: %@", card.contents];
     NSMutableArray *playableCards = [[NSMutableArray alloc] init];
     //accumlate
     for (Card *otherCard in self.cards) {
         if ([playableCards count] >= matchMode - 1) {
-            NSLog(@"Breaking accuml for matchmode %d, cardcount: %d",matchMode, [playableCards count]);
             break;
         }
         if (otherCard.isFaceUp && !otherCard.isUnPlayable) {
             [playableCards addObject:otherCard];
         }
     }
-    NSLog(@"%d, %d", [playableCards count], matchMode);
     //get score
     if ([playableCards count] == matchMode -1) {
         matchScore = [card match: playableCards];
@@ -95,7 +93,6 @@
 }
 -(void)flipCardAtIndex:(NSUInteger)index forMatchingMode:(NSUInteger)matchMode
 {
-    Card *oldcard;
     Card *card = [self cardAtIndex:index];
     int matchScore;
     if (card && !card.isUnPlayable) {
@@ -113,16 +110,7 @@
         } else {
             self.lastPlay = [NSString stringWithFormat:@"Flipped down %@", card.contents];
         }
-        if (0 && [self.cardHistory count] > 2) {
-            NSLog(@"cardhistory count %d", [self.cardHistory count]);
-            oldcard = [self.cardHistory objectAtIndex:0];
-            NSLog(@"oldcard %@ should go facedown", oldcard.contents);
-            [self.cardHistory removeObjectAtIndex:0];
-            if (!oldcard.isUnPlayable)
-                oldcard.faceUp = NO;
-        }
         card.faceUp = !card.isFaceUp;
-        
     }
     else {
         self.lastPlay = @"Unplayable Card: Impossible?";
