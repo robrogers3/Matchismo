@@ -18,6 +18,7 @@
 @property (weak, nonatomic) IBOutlet UILabel *scoreLabel;
 @property (weak, nonatomic) IBOutlet UILabel *statusLabel;
 @property (weak, nonatomic) IBOutlet UISegmentedControl *matchControl;
+@property (weak, nonatomic) IBOutlet UISlider *historySlider;
 @property (nonatomic) NSUInteger matchMode;
 @end
 
@@ -83,5 +84,9 @@
     NSUInteger m = sender.selectedSegmentIndex;
     self.matchMode = sender.selectedSegmentIndex + 2;
     NSLog(@"toggle controler %d, matchmode %d", m, self.matchMode);
+}
+- (IBAction)showGameHistory:(UISlider *)sender {
+    
+    NSLog(@"History value is: %li", lrint(sender.value));
 }
 @end
