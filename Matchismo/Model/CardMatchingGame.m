@@ -12,7 +12,7 @@
 @property (strong,nonatomic) NSMutableArray *cards;
 @property (nonatomic,readwrite,strong) NSString *lastPlay;
 @property (nonatomic,strong) NSMutableArray *cardHistory;
-@property (nonatomic) NSUInteger matchCount;
+//@property (nonatomic) NSUInteger matchCount;
 @end
 
 @implementation CardMatchingGame
