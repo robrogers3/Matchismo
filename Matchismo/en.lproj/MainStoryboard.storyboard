@@ -317,7 +317,7 @@
                         </subviews>
                         <color key="backgroundColor" red="0.70196080207824707" green="0.70196080207824707" blue="0.70196080207824707" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Game" id="bfD-ve-E4N"/>
+                    <tabBarItem key="tabBarItem" title="Game" image="shape-diamond.png" id="bfD-ve-E4N"/>
                     <connections>
                         <outlet property="flipsLabel" destination="GAH-XD-hlF" id="uoh-ef-kHb"/>
                         <outlet property="historySlider" destination="AbZ-TI-ity" id="ftt-3i-6Rz"/>
@@ -428,7 +428,7 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Scores" id="Ooa-Iu-I61"/>
+                    <tabBarItem key="tabBarItem" title="Scores" image="shape-triangle.png" id="Ooa-Iu-I61"/>
                     <connections>
                         <outlet property="display" destination="g9h-wl-MgT" id="PpE-8j-GBY"/>
                     </connections>
@@ -438,13 +438,15 @@
             <point key="canvasLocation" x="-152" y="270"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="shape-diamond.png" width="30" height="30"/>
+        <image name="shape-triangle.png" width="30" height="30"/>
+    </resources>
     <classes>
         <class className="CardGameViewController" superclassName="UIViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/CardGameViewController.h"/>
             <relationships>
                 <relationship kind="action" name="changeMatchMode:" candidateClass="UISegmentedControl"/>
-                <relationship kind="action" name="flipCard:" candidateClass="UIButton"/>
-                <relationship kind="action" name="showGameHistory:" candidateClass="UISlider"/>
                 <relationship kind="outlet" name="flipsLabel" candidateClass="UILabel"/>
                 <relationship kind="outlet" name="historySlider" candidateClass="UISlider"/>
                 <relationship kind="outlet" name="matchControl" candidateClass="UISegmentedControl"/>

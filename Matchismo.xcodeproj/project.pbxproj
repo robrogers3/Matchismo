@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		EE278E4216C0CD9E001ECB62 /* cardback.png in Resources */ = {isa = PBXBuildFile; fileRef = EE278E4116C0CD9E001ECB62 /* cardback.png */; };
+		EE4A556E16D9BEF500842845 /* first.png in Resources */ = {isa = PBXBuildFile; fileRef = EE4A556D16D9BEF500842845 /* first.png */; };
+		EE4A557116D9C11600842845 /* shape-triangle.png in Resources */ = {isa = PBXBuildFile; fileRef = EE4A557016D9C11600842845 /* shape-triangle.png */; };
+		EE4A557316D9C15A00842845 /* shape-diamond.png in Resources */ = {isa = PBXBuildFile; fileRef = EE4A557216D9C15A00842845 /* shape-diamond.png */; };
 		EECBEA5F16BDDDF700CC178A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EECBEA5E16BDDDF700CC178A /* UIKit.framework */; };
 		EECBEA6116BDDDF700CC178A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EECBEA6016BDDDF700CC178A /* Foundation.framework */; };
 		EECBEA6316BDDDF700CC178A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EECBEA6216BDDDF700CC178A /* CoreGraphics.framework */; };
@@ -31,6 +34,9 @@
 
 /* Begin PBXFileReference section */
 		EE278E4116C0CD9E001ECB62 /* cardback.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cardback.png; sourceTree = "<group>"; };
+		EE4A556D16D9BEF500842845 /* first.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = first.png; sourceTree = "<group>"; };
+		EE4A557016D9C11600842845 /* shape-triangle.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "shape-triangle.png"; sourceTree = "<group>"; };
+		EE4A557216D9C15A00842845 /* shape-diamond.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "shape-diamond.png"; sourceTree = "<group>"; };
 		EECBEA5A16BDDDF700CC178A /* Matchismo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Matchismo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EECBEA5E16BDDDF700CC178A /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		EECBEA6016BDDDF700CC178A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -131,8 +137,11 @@
 				EECBEA6616BDDDF700CC178A /* Matchismo-Info.plist */,
 				EECBEA6716BDDDF700CC178A /* InfoPlist.strings */,
 				EECBEA6A16BDDDF700CC178A /* main.m */,
+				EE4A556D16D9BEF500842845 /* first.png */,
 				EECBEA6C16BDDDF700CC178A /* Matchismo-Prefix.pch */,
 				EECBEA7016BDDDF700CC178A /* Default.png */,
+				EE4A557216D9C15A00842845 /* shape-diamond.png */,
+				EE4A557016D9C11600842845 /* shape-triangle.png */,
 				EECBEA7216BDDDF700CC178A /* Default@2x.png */,
 				EECBEA7416BDDDF700CC178A /* Default-568h@2x.png */,
 			);
@@ -215,6 +224,9 @@
 				EECBEA7816BDDDF700CC178A /* MainStoryboard.storyboard in Resources */,
 				EECBEA8F16BE123C00CC178A /* README.md in Resources */,
 				EE278E4216C0CD9E001ECB62 /* cardback.png in Resources */,
+				EE4A556E16D9BEF500842845 /* first.png in Resources */,
+				EE4A557116D9C11600842845 /* shape-triangle.png in Resources */,
+				EE4A557316D9C15A00842845 /* shape-diamond.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
